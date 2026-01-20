@@ -1,32 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Zach Lunsford Profile</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zachariah Lunsford • Profile</title>
+  <meta name="description" content="Zachariah Lunsford — Graduate student and researcher. Systems alarms, log analysis, and foundational models." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body style="background-color: grey">
-<p>Hello! I am Zachariah Lunsford, a Graduate student and researcher (graduating in May 2027).</p>
-<p>My current research is into the applications of foundational models in the field of system alarms and log analysis.</p>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Zachariah Lunsford</a>
 
-<img src="./img/img1.jpg" alt="Here's a cute-ish picture of myself">
+      <nav class="nav">
+        <a href="introduction.html">Skills</a>
+        <a href="#coursework">Coursework</a>
+        <a class="btn btn--ghost" href="Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </div>
+  </header>
 
-<h3>I've graduated with my Bachelors in Computer Science with a 3.87/4.00 GPA.</h3>
-<h5>Below are some example courses I've taken</h5>
-<ul>
-    <li>COMP285 - Analysis of Algorithms</li>
-    <li>Google Tech Exchange - Applied Data Structures (Python)</li>
-    <li>COMP322 - Internet Systems (Javascript, HTML, CSS)</li>
-    <li>COMP267 - Data Base Design(MySQL)</li>
-    <li>COMP350 - Operating Systems (C++)</li>
-    <li>COMP320 - Fundamentals of Cyber Security</li
-    <li>ECEN375 - Computer Architecture and Organization</li>
-    <li>COMP390 - Social Implications of Computing</li>
-</ul>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <p class="eyebrow">Graduate Student • Researcher</p>
+        <h1>Building practical AI for noisy, real-world systems.</h1>
+        <p class="lead">
+          I’m Zachariah Lunsford (graduating May 2027). My research explores foundational models for
+          system alarms and log analysis—especially detecting mis-tagged or inconsistent alarm categorizations.
+        </p>
 
-<a href="introduction.html"> Here are my languages and skills</a>
-<p>Look at my super cool Resume below.</p>
-<a href="Resume.pdf" target="_blank"> Link to Resume</a>
+        <div class="hero-actions">
+          <a class="btn" href="Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+          <a class="btn btn--ghost" href="introduction.html">Skills & Tools</a>
+        </div>
 
+        <div class="meta-row">
+          <div class="meta-card">
+            <p class="meta-label">Education</p>
+            <p class="meta-value">B.S. Computer Science</p>
+            <p class="meta-sub">GPA: 3.87 / 4.00</p>
+          </div>
+          <div class="meta-card">
+            <p class="meta-label">Focus</p>
+            <p class="meta-value">Logs • Alarms • LLMs</p>
+            <p class="meta-sub">Trust + explainability</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="avatar-card">
+          <img class="avatar" src="./img/img1.jpg" alt="Photo of Zachariah Lunsford" />
+          <div class="avatar-caption">
+            <p class="avatar-name">Zachariah Lunsford</p>
+            <p class="avatar-sub">NC A&amp;T • Graduate Student</p>
+          </div>
+        </div>
+
+        <!-- Optional links (fill these in) -->
+        <div class="link-grid">
+          <a class="link-tile" href="#" aria-label="LinkedIn">
+            <span class="link-title">LinkedIn</span>
+            <span class="link-sub">Add your profile URL</span>
+          </a>
+          <a class="link-tile" href="#" aria-label="GitHub">
+            <span class="link-title">GitHub</span>
+            <span class="link-sub">Add your GitHub URL</span>
+          </a>
+          <a class="link-tile" href="mailto:your.email@example.com" aria-label="Email">
+            <span class="link-title">Email</span>
+            <span class="link-sub">your.email@example.com</span>
+          </a>
+          <a class="link-tile" href="Resume.pdf" target="_blank" rel="noopener" aria-label="Resume">
+            <span class="link-title">Resume</span>
+            <span class="link-sub">PDF</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="coursework" class="section">
+      <div class="section-head">
+        <h2>Selected Coursework</h2>
+        <p class="muted">A quick snapshot of classes relevant to software engineering, systems, and security.</p>
+      </div>
+
+      <div class="card">
+        <ul class="pill-list">
+          <li>COMP285 — Analysis of Algorithms</li>
+          <li>Google Tech Exchange — Applied Data Structures (Python)</li>
+          <li>COMP322 — Internet Systems (JavaScript, HTML, CSS)</li>
+          <li>COMP267 — Database Design (MySQL)</li>
+          <li>COMP350 — Operating Systems (C++)</li>
+          <li>COMP320 — Fundamentals of Cyber Security</li>
+          <li>ECEN375 — Computer Architecture &amp; Organization</li>
+          <li>COMP390 — Social Implications of Computing</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Next upgrades (optional)</h2>
+        <p class="muted">If you want, we can add a Projects section with 3–6 cards.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Projects</h3>
+          <p class="muted">Add 3–6 projects with links, stack, and impact bullets.</p>
+        </div>
+        <div class="card">
+          <h3>Research</h3>
+          <p class="muted">Add a short “What I’m studying” + methods + what you’re measuring.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Zachariah Lunsford</p>
+      <p class="muted">Built with HTML/CSS • Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
