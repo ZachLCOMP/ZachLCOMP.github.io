@@ -1,25 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>COMP322: Assignment 1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zachariah Lunsford • Skills</title>
+  <meta name="description" content="Skills, tools, and background for Zachariah Lunsford." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body style="background-color: grey">
-<table border="1">
-    <tr>
-        <th>Skills & Abilities</th>
-        <th>Education & Training</th>
-    </tr>
-    <tr>
-        <td>Patient, communicative, and a quick learner</td>
-        <td rowspan="2">Associates in Science earned at Piedmont Community College</td>
-    </tr>
-    <tr>
-        <td>Data Structures, Computer Program Design,<br> Discrete Math, and experience with Java, Python,<br> C++, and HTML</td>
-    </tr>
-</table>
-<img src="./img/img3.jpg" alt="Family Picture">
-<img src="./img/img2.jpg" alt="Funny DJ Khaled picture totally relates to computer science I swear">
-<a href="index.html">Go back</a>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Zachariah Lunsford</a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a class="btn btn--ghost" href="Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <h1>Skills & Tools</h1>
+        <p class="muted">A quick overview of what I work with and how I like to operate.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h2 class="card-title">Strengths</h2>
+          <ul class="list">
+            <li>Patient, communicative, quick learner</li>
+            <li>Comfortable reading docs, debugging, and iterating fast</li>
+            <li>Strong interest in systems + ML/AI applied to real problems</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">Education</h2>
+          <ul class="list">
+            <li>Associate in Science — Piedmont Community College</li>
+            <li>B.S. Computer Science — (add school + year)</li>
+            <li>Graduate Student — (add program details)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h2 class="card-title">Languages</h2>
+          <ul class="pill-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">Tools</h2>
+          <ul class="pill-list">
+            <li>Git / GitHub</li>
+            <li>Linux / macOS</li>
+            <li>SQL (MySQL)</li>
+            <li>Unity (optional)</li>
+            <li>Docker (optional)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">Interests</h2>
+          <ul class="pill-list">
+            <li>Log analysis</li>
+            <li>System alarms</li>
+            <li>Trust &amp; explainability</li>
+            <li>Cybersecurity</li>
+            <li>Distributed systems</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h2 class="card-title">Photos (optional)</h2>
+          <p class="muted">If these aren’t “professional portfolio” vibes, you can swap them out or remove them.</p>
+          <div class="photo-row">
+            <img class="photo" src="./img/img3.jpg" alt="Family photo" />
+            <img class="photo" src="./img/img2.jpg" alt="Fun photo" />
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">Navigation</h2>
+          <p class="muted">Back to the main page:</p>
+          <a class="btn" href="index.html">Go home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Zachariah Lunsford</p>
+      <p class="muted">Built with HTML/CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
